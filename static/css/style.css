@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+/*NAV------------------------------------*/
+
 nav {
     z-index: 1000;
 }
@@ -112,6 +114,11 @@ nav ul li a:active {
         display: none; /* Oculta el <li> vacío */
     }
 }
+
+
+
+ /*MAIN o SECTION-------------------------------------------------------------------------------------*/
+
  
 #seccion-con-foto {
     position: relative;
@@ -145,12 +152,7 @@ nav ul li a:active {
 }
 
 
-h1 {
-    position: relative;
-    color: #02577a;
-    z-index: 1000;
-    font-size: 6vw;
-}
+
 
 main {
     position: relative; /* Asegura que el contenedor principal tenga una posición relativa */
