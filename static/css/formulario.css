@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 /*NAV------------------------------------*/
 
 nav {
@@ -119,49 +118,74 @@ a[href*="emergencias"]:active {
 
 
 
- /*MAIN o SECTION-------------------------------------------------------------------------------------*/
 
- 
-#seccion-con-foto {
-    position: relative;
-    background-image: linear-gradient(to bottom, rgb(3 169 244 / 45%), rgb(0 255 244 / 13%)), url("../img/metalocus_sanatorio-paimio_70.jpg");
-    background-size: cover;
-    background-position: center;
+
+
+/* Estilos para el formulario de contacto */
+
+
+section p {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f9f9f9;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 8px;
+}
+main{
+font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+
+section h1 {
     text-align: center;
-    height: 82vh;
+    color: #007bff;
 }
 
-#seccion-con-foto::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(255 255 255 / 66%);
+section h4{
+    text-align: center;
 }
 
-.container{
-    align-items: center;
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
 }
 
-.logo {
-    position: absolute;
-    top: 50%; /* Centra verticalmente el logo en la sección */
-    left: 50%; /* Centra horizontalmente el logo en la sección */
-    transform: translate(-50%, -50%); /* Centra completamente el logo */
-    z-index: 999;
+label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-
-
-
-main {
-    position: relative; /* Asegura que el contenedor principal tenga una posición relativa */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
 }
 
+input[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    align: center;
+}
 footer {
     background-color: #02577a;
     color: #fff;
@@ -226,6 +250,7 @@ footer {
 }
 
 /* Media query para hacer el menú responsive en pantallas pequeñas */
+/* Media query para hacer el menú responsive en pantallas pequeñas */
 @media only screen and (max-width: 768px) {
     nav ul {
         grid-template-columns: 1fr;
@@ -258,6 +283,26 @@ footer {
     }
     .dropdown-content {
         pointer-events: none; /* Desactiva la interacción con los dropdowns */
+    }
+    .nosotrosTexto {
+        padding: 0 5%;
+    }
+
+    .nosotrosTexto h2 {
+        font-size: 22px;
+    }
+
+    .nosotrosTexto p {
+        font-size: 14px;
+    }
+
+    .slideImagenes {
+        width: 100%;
+        height: auto;
+    }
+
+    .slideImagenes img {
+        height: auto;
     }
 }
 
@@ -316,5 +361,8 @@ footer {
           .dropdown-content {
             pointer-events: none; /* Desactiva la interacción con los dropdowns */
         }
-        
-          }
+         }
+
+         section h1 {
+            margin-top: 0%;
+        }

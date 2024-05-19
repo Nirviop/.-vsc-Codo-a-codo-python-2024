@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de turnos</title>
+    <link rel="stylesheet" href="../static/css/formulario.css">
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li id="image"><a href="../index.html" ><img src="../static/img/logo.png" height="110px" alt=""></a></li>
+            <li class="dropdown" ><a href="../templates/nosotros.html">Nosotros</a>
+                <div class="dropdown-content"><a href="">Sobre "Grupo 7"</a><a href="">Contacto</a><a href="">Como llegar</a></div>
+            <li class="dropdown" ><a href="../templates/serviciosMedicos.html">Servicios médicos</a>
+                <div class="dropdown-content"><a href="">Laboratorio</a>
+                <a href="">Terapia Intensiva</a>
+                <a href="">Unidad Coronaria</a>
+                <a href="">Quirofano</a>
+                <a href="">Más...</a></div></li>
+            <li class="dropdown"><a href="../templates/formulario.html" >Turnos</a>
+                <div class="dropdown-content"><a href="">Presenciales</a>
+                    <a href="">Videos Consultas</a></div></li>
+                    <li class="dropdown"> </li>
+                <li class="dropdown">
+                
+                    <a href="../templates/emergencias.html">Emergencias +</a>
+                    <!-- Otros enlaces adicionales aquí -->
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <body>
+        
+    
+    <main>
+<section>
+<h1>Formulario de contacto</h1>
+
+<h4>Complete los siguientes datos para solicitar su turno</h4>
+<form id= "formulario" onsubmit= "return validarDatos()" action="">
+   <div>
+    <label for="nombre completo">Nombre completo:</label>
+    <input type="text" name="nombre completo" id="nombre completo" placeholder="Juan Perez">
+</div>
+
+<div>
+    <label for="dni">DNI</label>
+    <input type="number" name="dni" id="dni" placeholder="sin puntos ni comas">
+</div>
+
+<div>
+    <label for="nacimiento">Fecha de nacimiento:</label>
+    <input type="date" name="nacimiento" id="nacimiento">
+</div>
+
+<div>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+</div>
+
+<div id="campos"></div>
+
+<div>
+    <!-- Seleccion -->
+    <label for="especialidad">Especialidad y/o profesional:</label>
+    <select name="especialidad" id="especialidad">
+    <option value="cardiologia">Cardiología</option>
+    <option value="clinica_medica">Clínica Médica</option>
+    <option value="d_por_imagenes">Diagnóstico por imágenes</option>
+    <option value="gastroenterologia">Gastroenterología</option>
+    <option value="laboratorio">Laboratorio</option>
+</select>
+</div>
+<!-- Radiobutton -->
+<div>
+    <input type="radio" name="historia" id="primera vez" value="primera vez">
+    <label for="primera vez">Es la primera vez que me atiendo en el sanatorio.</label>
+    <input type="radio" name="historia" id="paciente_regular" value="paciente_regular">
+    <label for="paciente_regular">Cuento con historia clínica en el sanatorio.</label>
+</div>
+
+<div>
+    <input type="submit" value="Enviar">
+
+</div>
+</form>
+
+    
+</section>
+
+    <script src="../static/js/validacion.js"></script>
+</main>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>Sobre Nosotros</h3>
+            <p>Información sobre "Grupo 7" y nuestra misión.</p>
+        </div>
+        <div class="footer-section links">
+            <h3>Enlaces Útiles</h3>
+            <ul>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Mapa del Sitio</a></li>
+            </ul>
+        </div>
+        <div class="footer-section social">
+            <h3>Síguenos</h3>
+            <a href="#"><img src="static/img/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="static/img/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="static/img/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Grupo 7. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>
+</body>
+</html>

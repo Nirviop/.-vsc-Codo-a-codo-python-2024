@@ -117,51 +117,71 @@ a[href*="emergencias"]:active {
     border: 1px solid #02577a;
 }
 
-
-
- /*MAIN o SECTION-------------------------------------------------------------------------------------*/
-
- 
-#seccion-con-foto {
-    position: relative;
-    background-image: linear-gradient(to bottom, rgb(3 169 244 / 45%), rgb(0 255 244 / 13%)), url("../img/metalocus_sanatorio-paimio_70.jpg");
-    background-size: cover;
-    background-position: center;
+/*MAIN--------------------------------*/
+main{
+    background-image: linear-gradient(to bottom right, rgba(213, 229, 238, 0.9), rgba(162, 227, 247, 0.444));
+}
+.Titulo {
     text-align: center;
-    height: 82vh;
+    font-size: 40px;
+    padding-top: 50px;
+    background-color: #fff;
+    color: #006666;
 }
 
-#seccion-con-foto::after {
-    content: "";
+.slideImagenes {
+    width: 720px;
+    height: auto;
+    margin: 50px auto 50px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.slideImagenes ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 300%; /* 100% por cada imagen */
+    animation: slide 20s infinite ease-in-out;
+}
+
+.slideImagenes li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.nosotrosTexto {
     position: absolute;
-    top: 0;
-    left: 0;
+    text-align: center;
+    padding: 0 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.nosotrosTexto h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.slideImagenes img {
     width: 100%;
     height: 100%;
-    background-color: rgb(255 255 255 / 66%);
+    object-fit: cover;
 }
 
-.container{
-    align-items: center;
-}
-
-.logo {
-    position: absolute;
-    top: 50%; /* Centra verticalmente el logo en la sección */
-    left: 50%; /* Centra horizontalmente el logo en la sección */
-    transform: translate(-50%, -50%); /* Centra completamente el logo */
-    z-index: 999;
+@keyframes slide {
+    0%, 20% {margin-left: 0;}
+    25%, 45% {margin-left: -100%;}
+    50%, 70% {margin-left: -200%;}
+    
 }
 
 
-
-
-main {
-    position: relative; /* Asegura que el contenedor principal tenga una posición relativa */
-}
-
-
-
+/*FOOTER--------------------------------*/
 footer {
     background-color: #02577a;
     color: #fff;
@@ -225,6 +245,24 @@ footer {
     margin-top: 20px;
 }
 
+.map-container {
+    max-width: 800px; /* Establece un ancho máximo para el contenedor */
+    margin: 0 auto 10px; /* Centra el contenedor horizontalmente */
+  }
+  
+  .map-wrapper {
+    position: relative;
+    padding-bottom: 50%; /* Establece el aspect ratio (alto/ancho) del contenedor */
+  }
+  
+  .map-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
 /* Media query para hacer el menú responsive en pantallas pequeñas */
 @media only screen and (max-width: 768px) {
     nav ul {
@@ -259,6 +297,26 @@ footer {
     .dropdown-content {
         pointer-events: none; /* Desactiva la interacción con los dropdowns */
     }
+    .nosotrosTexto {
+        padding: 0 5%;
+    }
+
+    .nosotrosTexto h2 {
+        font-size: 22px;
+    }
+
+    .nosotrosTexto p {
+        font-size: 14px;
+    }
+
+    .slideImagenes {
+        width: 100%;
+        height: auto;
+    }
+
+    .slideImagenes img {
+        height: auto;
+    }
 }
 
 
@@ -284,6 +342,9 @@ footer {
         overflow-y:auto; /* Muestra la barra de desplazamiento vertical al pasar el ratón */
     }
     
+    section h2{
+        text-align: end;
+    }
    
 
     ul {
@@ -316,5 +377,15 @@ footer {
           .dropdown-content {
             pointer-events: none; /* Desactiva la interacción con los dropdowns */
         }
-        
+        .slideImagenes {
+            width: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .Titulo{
+            display: none;
+        }
+        .nosotrosTexto {
+            margin-left: 200px;
+        }
           }
