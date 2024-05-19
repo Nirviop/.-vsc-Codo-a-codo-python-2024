@@ -95,18 +95,18 @@ nav ul li a:active {
     display: block;
 }
 
-a[href*="emergencias"] {
+a[href*="templates/emergencias"] {
     color: #FF0000; /* Cambia el color del texto a rojo */
     font-weight: bold; /* Cambia el peso de la fuente a negrita */
     
 }
 
-a[href*="emergencias"]:hover {
+a[href*="templates/emergencias"]:hover {
     color: #FF4500; /* Cambia el color del texto en hover a un tono diferente de rojo */
     
 }
 
-a[href*="emergencias"]:active {
+a[href*="templates/emergencias"]:active {
     color: #8B0000; /* Cambia el color del texto cuando se hace clic */
    
 }
