@@ -33,7 +33,9 @@
                 </ul>
             </nav>
         </header>
-        <h1 class="Titulo">Sanatorio Grupo 7</h1>
+        <div class="Titulo"><div class="container">
+            <img src="../static/img/logomain.png" alt="" class="logo">
+        </div></div>
         <main>
             
             <div class="slideImagenes">
@@ -86,6 +88,23 @@
                 </div>
               </div>
           </section>
+          <section id="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <form id="contacto-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+    
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
         <footer>
             <div class="footer-content">
                 <div class="footer-section about">

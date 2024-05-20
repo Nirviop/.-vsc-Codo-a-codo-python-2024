@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
 }
-
+body{
+    background-color: #f7f7f7;
+}
 
 /*NAV------------------------------------*/
 
@@ -122,17 +124,47 @@ main{
     background-image: linear-gradient(to bottom right, rgba(213, 229, 238, 0.9), rgba(162, 227, 247, 0.444));
 }
 .Titulo {
+    position: relative;
     text-align: center;
     font-size: 40px;
     padding-top: 50px;
-    background-color: #fff;
-    color: #006666;
+    background-image: linear-gradient(to bottom, rgb(3 169 244 / 45%), rgb(0 255 244 / 13%)), url('../img/metalocus_sanatorio-paimio_70.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    grid-column: 1 / -1;
+}
+
+.Titulo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 255 255 / 66%);
+    color: #000000;
+}
+
+.container{
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top: 50%; /* Centra verticalmente el logo en la sección */
+    left: 50%; /* Centra horizontalmente el logo en la sección */
+    transform: translate(-50%, -50%); /* Centra completamente el logo */
+    z-index: 999;
+    width: 430px; /* Ancho deseado */
+    height: auto; /* Altura automática para mantener la proporción */
 }
 
 .slideImagenes {
     width: 720px;
     height: auto;
-    margin: 50px auto 50px;
+    margin: 18px auto 50px;
     overflow: hidden;
     position: relative;
     
@@ -172,6 +204,7 @@ main{
     height: 100%;
     object-fit: cover;
 }
+
 
 @keyframes slide {
     0%, 20% {margin-left: 0;}
@@ -263,6 +296,46 @@ footer {
     height: 100%;
   }
 
+  #contacto {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    background-image: linear-gradient(to bottom right, rgba(213, 229, 238, 0.9), rgba(162, 227, 247, 0.444));
+}
+
+#contacto h2 {
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contacto-formulario label,
+#contacto-formulario input,
+#contacto-formulario textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#contacto-formulario textarea {
+    height: 150px;
+}
+
+#contacto-formulario button {
+    background-color: #29abe2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#contacto-formulario button:hover {
+    background-color: #02577a;
+}
+
+
 /* Media query para hacer el menú responsive en pantallas pequeñas */
 @media only screen and (max-width: 768px) {
     nav ul {
@@ -316,6 +389,9 @@ footer {
 
     .slideImagenes img {
         height: auto;
+    }
+    .Titulo{
+        display: none;
     }
 }
 
