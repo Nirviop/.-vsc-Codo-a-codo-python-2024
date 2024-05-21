@@ -5,98 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanatorio Grupo 7</title>
     <link rel="stylesheet" href="../static/css/serviciosMedicos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-        <header>
-            <nav>
-                <ul>
-                    <li id="image"><a href="../index.html" ><img src="../static/img/logo.png" height="110px" alt=""></a></li>
-                    <li class="dropdown" ><a href="../templates/nosotros.html">Nosotros</a>
-                        <div class="dropdown-content"><a href="">Sobre "Grupo 7"</a><a href="">Contacto</a><a href="">Como llegar</a></div>
-                    <li class="dropdown" ><a href="../templates/serviciosMedicos.html">Servicios médicos</a>
-                        <div class="dropdown-content"><a href="">Laboratorio</a>
-                        <a href="">Terapia Intensiva</a>
-                        <a href="">Unidad Coronaria</a>
-                        <a href="">Quirofano</a>
-                        <a href="">Más...</a></div></li>
-                    <li class="dropdown"><a href="../templates/formulario.html" >Turnos</a>
-                        <div class="dropdown-content"><a href="">Presenciales</a>
-                            <a href="">Videos Consultas</a></div></li>
-                            <li class="dropdown"></li>
+    <header>    <!--HEADER nav-->
+        <nav>
+            <ul>
+                <li id="image">
+                    <a href="../index.html" >
+                        <img src="../static/img/logo.png" height="110" alt="">
+                    </a>
+                </li>
+                <li class="dropdown" >
+                    <a href="../templates/nosotros.html">Nosotros</a>
+                    <div class="dropdown-content">
+                        <a href="../templates/nosotros.html#destinoNosotros">Sobre "Grupo 7"</a>
+                        <a href="../templates/nosotros.html#contacto">Contacto</a>
+                        <a href="../templates/nosotros.html#destinoUbicacion">Como llegar</a>
+                    </div>
+                <li class="dropdown" >
+                    <a href="../templates/serviciosMedicos.html">Servicios médicos</a>
+                    <div class="dropdown-content">
+                        <a href="../templates/serviciosMedicos.html#cardiologia">Cardiología</a>
+                        <a href="../templates/serviciosMedicos.html#clinicaMedica">Clínica Médica</a>
+                        <a href="../templates/serviciosMedicos.html#diagnosticoPorimagenes">Diagnóstico por imágenes</a>
+                        <a href="../templates/serviciosMedicos.html#gastro">Gastroenterología</a>
+                        <a href="../templates/serviciosMedicos.html#laboratorio">Laboratorio</a>
+                    </div>
+                </li>
                 <li class="dropdown">
-                
-                    <a href="../templates/emergencias.html">Emergencias +</a>
-                            <!-- Otros enlaces adicionales aquí -->
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div class="Titulo"><div class="container">
+                    <a href="../templates/formulario.html" >Turnos</a>
+                </li>
+                <li class="dropdown"> 
+                    <a href=""></a>
+                </li>
+                <li class="dropdown">                
+                    <a href="../templates/emergencias.html">Emergencias +</a>  
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Titulo" aria-label="Sanatorio Grupo 7">    <!--Section banner-->
+        <div class="container">
             <img src="../static/img/logomain.png" alt="" class="logo">
-        </div></div>
-        <main class="main-container">
-            
-            <div class="wrapper">
-                <div class="item one">
-                    <div class="content" id="content1">
-                        <h2>Título 1</h2>
-                        <p>Descripción de la tarjeta 1</p>
-                    </div>
-                </div>
-                <div class="item two" id="content2">
-                    <div class="content">
-                        <h2>Título 2</h2>
-                        <p>Descripción de la tarjeta 2</p>
-                    </div>
-                </div>
-                <div class="item three">
-                    <div class="content">
-                        <h2>Título 3</h2>
-                        <p>Descripción de la tarjeta 3</p>
-                    </div>
-                </div>
-                <div class="item four">
-                    <div class="content">
-                        <h2>Título 4</h2>
-                        <p>Descripción de la tarjeta 4</p>
-                    </div>
-                </div>
-                <div class="item five">
-                    <div class="content">
-                        <h2>Título 5</h2>
-                        <p>Descripción de la tarjeta 5</p>
-                    </div>
+        </div>
+    </section>
+    <main class="main-container" id="destinoserviciosMedicos">     <!--MAIN servicios-->   
+        <div class="wrapper">
+            <div class="item one" id="cardiologia">
+                <div class="content" id="content1">
+                    <h2>Cardiología</h2>
+                    <p>En Sanatorio Grupo 7, nuestra especialidad en cardiología ofrece diagnóstico y 
+                        tratamiento de enfermedades del corazón con tecnología de vanguardia y un enfoque centrado en el paciente.
+                    </p>
                 </div>
             </div>
-        </main>
-        <article>
-    
-        </article>
-        <footer>
-            <div class="footer-content">
-                <div class="footer-section about">
+            <div class="item two" id="clinicaMedica">
+                <div class="content" id="content2">
+                    <h2>Clínica Médica</h2>
+                    <p>Nuestros servicios de clínica médica en Sanatorio Grupo 7 brindan atención integral y 
+                        personalizada para una variedad de condiciones de salud, asegurando tu bienestar a largo plazo.
+                    </p>
+                </div>
+            </div>
+            <div class="item three" id="diagnosticoPorimagenes">
+                <div class="content" >
+                    <h2>Diagnóstico por imágenes</h2>
+                    <p>Con equipos de última generación, nuestro servicio de diagnóstico por imágenes 
+                        en Sanatorio Grupo 7 proporciona resultados precisos y confiables para guiar tu tratamiento médico.
+                    </p>
+                </div>
+            </div>
+            <div class="item four" id="gastro">
+                <div class="content">
+                    <h2>Gastroenterología</h2>
+                    <p>En Sanatorio Grupo 7, nuestros especialistas en gastroenterología están comprometidos a 
+                        abordar tus preocupaciones digestivas con compasión y experiencia, utilizando las últimas técnicas y tecnologías.
+                    </p>
+                </div>
+            </div>
+            <div class="item five" id="laboratorio">
+                <div class="content">
+                    <h2>Laboratorio</h2>
+                    <p>En Sanatorio Grupo 7, nuestro laboratorio ofrece análisis clínicos precisos y confiables, 
+                        jugando un papel fundamental en tu diagnóstico y tratamiento médico.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>    <!--FOOTER  -->
+        <div class="footer-content">
+            <div class="footer-section about">
+                <a href="../templates/nosotros.html">
                     <h3>Sobre Nosotros</h3>
                     <p>Información sobre "Grupo 7" y nuestra misión.</p>
-                </div>
-                <div class="footer-section links">
-                    <h3>Enlaces Útiles</h3>
-                    <ul>
-                        <li><a href="#">Política de Privacidad</a></li>
-                        <li><a href="#">Términos y Condiciones</a></li>
-                        <li><a href="#">Mapa del Sitio</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section social">
-                    <h3>Síguenos</h3>
-                    <a href="#"><img src="static/img/facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="static/img/twitter.png" alt="Twitter"></a>
-                    <a href="#"><img src="static/img/instagram.png" alt="Instagram"></a>
-                </div>
+                </a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Grupo 7. Todos los derechos reservados.</p>
+            <div class="footer-section links">
+                <h3>Enlaces Útiles</h3>
+                <ul>
+                    <li><a href="../templates/nosotros.html#contacto">Contáctanos</a></li>
+                    <li><a href="../templates/serviciosMedicos.html#destinoserviciosMedicos">Nuestros Servicios</a></li>
+                    <li><a href="../templates/nosotros.html#destinoUbicacion">Ubicación</a></li>
+                </ul>
             </div>
-        </footer>
-    </body>
+            <div class="footer-section social">
+                <h3>Síguenos</h3>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Grupo 7. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
 </html>

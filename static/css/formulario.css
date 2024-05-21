@@ -245,6 +245,11 @@ footer {
     min-width: 200px;
 }
 
+.footer-section a{
+    text-decoration: none;
+    color: inherit;
+    }
+
 .footer-section h3 {
     margin-bottom: 10px;
     font-size: 1.2em;
@@ -285,6 +290,37 @@ footer {
 
 .footer-bottom {
     margin-top: 20px;
+}
+
+.footer-section.social a {
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section.social a .fa-facebook {
+    color: #3b5998; /* Color inicial de Facebook */
+}
+
+.footer-section.social a .fa-twitter {
+    color: #00acee; /* Color inicial de Twitter */
+}
+
+.footer-section.social a .fa-instagram {
+    color: #e4405f; /* Color inicial de Instagram */
+}
+
+.footer-section.social a:hover .fa-facebook {
+    color: #1d305e; /* Color de Facebook al pasar el ratón por encima */
+}
+
+.footer-section.social a:hover .fa-twitter {
+    color: #007bb5; /* Color de Twitter al pasar el ratón por encima */
+}
+
+.footer-section.social a:hover .fa-instagram {
+    color: #bc2a8d; /* Color de Instagram al pasar el ratón por encima */
 }
 
 /* Media query para hacer el menú responsive en pantallas pequeñas */
@@ -363,7 +399,7 @@ footer {
         top: 0;
         left: 0;
         width: 200px; /* Ancho del menú de navegación */
-        max-height: calc(100vh - 85px - 50px); /* Limita la altura del menú al 100% de la altura de la pantalla menos la altura del header y del footer */
+        max-height: calc(100vh - 130px - 50px); /* Limita la altura del menú al 100% de la altura de la pantalla menos la altura del header y del footer */
         overflow-y: auto; /* Agrega una barra de desplazamiento vertical si el contenido del menú es demasiado largo */
         overflow-x: hidden; /* Oculta el desbordamiento horizontal */
         z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
