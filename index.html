@@ -13,7 +13,7 @@
             <ul>
                 <li id="image">
                     <a href="index.html" >
-                        <img src="static/img/logo.png" height="110" alt="">
+                        <img src="static/img/logo.png" height="110" alt="Sanatorio Grupo 7">
                     </a>
                 </li>
                 <li class="dropdown" >
@@ -40,10 +40,24 @@
                     <a href=""></a>
                 </li>
                 <li class="dropdown">                
-                    <a href="templates/emergencias.html">Emergencias +</a>  
-                </li>
+                    <!-- El modal -->
+                    <a href="javascript:void(0)" class="emergencias-link" id="emergenciasLink">Emergencias</a>
+               </li>
             </ul>
         </nav>
+        <!-- El modal -->
+        <div id="myModal" class="modal">
+        
+            <!-- Contenido del modal -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Sanatorio Grupo 7</p>
+              <p>Dirección: Rivadavia 1000000</p>
+              <p>Teléfono: 1111111111111</p>
+              <p>Horario: 24 horas</p>
+            </div>
+          
+          </div>
     </header>  
     <main>  <!--MAIN section  -->
         <section id="seccion-con-foto"  aria-label="Sanatorio Grupo 7">
@@ -79,5 +93,6 @@
             <p>&copy; 2024 Grupo 7. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="static/js/modal.js"></script>
 </body>
 </html>
