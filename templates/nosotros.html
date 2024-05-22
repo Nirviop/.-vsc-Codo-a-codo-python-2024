@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanatorio Grupo 7</title>
+    <link rel="stylesheet" href="../static/css/global.css">
     <link rel="stylesheet" href="../static/css/nosotros.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>    <!--HEADER nav-->
+    <!--HEADER------------------------------------------------------------------------------------------->
+    <header>  
+        <!--NAV------------------------------------------------------------------->  
         <nav>
             <ul>
                 <li id="image">
                     <a href="../index.html" >
-                        <img src="../static/img/logo.png" height="110" alt="">
+                        <img src="../static/img/logo.png" height="110" alt="Sanatorio Gripo 7 logo">
                     </a>
                 </li>
                 <li class="dropdown" >
@@ -34,39 +40,37 @@
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="../templates/formulario.html" >Turnos</a>
+                    <a href="../templates/formulario.html">Turnos</a>
                 </li>
-                <li class="dropdown"> 
+                <!--Li vacio para poder jugar con el espacio en distintas medidas con display:none-->
+                <li class="dropdown">
                     <a href=""></a>
                 </li>
+                <!--MODAL link a js--->
                 <li class="dropdown">                
-                     <!-- El modal -->
                      <a href="javascript:void(0)" class="emergencias-link" id="emergenciasLink">Emergencias</a>
                 </li>
             </ul>
         </nav>
-       
-
-        <!-- El modal -->
+        <!-- MODAL ---------------------------------------------------------->
         <div id="myModal" class="modal">
-        
-          <!-- Contenido del modal -->
           <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Sanatorio Grupo 7</p>
-            <p>Dirección: Rivadavia 1000000</p>
-            <p>Teléfono: 1111111111111</p>
-            <p>Horario: 24 horas</p>
+                <span class="close">&times;</span>
+                <p>Sanatorio Grupo 7</p>
+                <p>Dirección: Rivadavia 1000000</p>
+                <p>Teléfono: 1111111111111</p>
+                <p>Horario: 24 horas</p>
           </div>
-        
         </div>
     </header>
-        <section class="Titulo" aria-label="Sanatorio Grupo 7">    <!--SECTION banner-->
-            <div class="container">
-                <img src="../static/img/logomain.png" alt="" class="logo">
-            </div>
-        </section>
-    <main id="destinoNosotros">  <!--MAIN nosotros-->
+    <!--SECTION banner--------------------------------------------------------------------------------------->
+    <section class="Titulo" aria-label="Sanatorio Grupo 7">    
+        <div class="container">
+            <img src="../static/img/logomain.png" alt="Sanatorio grupo 7 logo" class="logo">
+        </div>
+    </section>
+    <!--MAIN nosotros---------------------------------------------------------------------------------------->
+    <main id="destinoNosotros">  
         <div class="slideImagenes">
             <ul>
                 <li>
@@ -107,8 +111,9 @@
             </ul>
         </div>
     </main>
-    <section class="map-container" id="destinoUbicacion"> <!--SECTION mapa-->
-        <h2>Encuéntranos Aquí</h2>
+    <!--SECTION mapa----------------------------------------------------------------------------------->
+    <section class="map-container" id="destinoUbicacion"> 
+        <h2 id="mapa">Encuéntranos Aquí</h2>
         <div class="map-wrapper">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.904936799358!2d-122.08424968469258!3d37.42199997982505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24c97d7cd41%3A0x4cda9fb2c7ffb439!2sGoogleplex!5e0!3m2!1sen!2sus!4v1588881733425!5m2!1sen!2sus"
@@ -121,21 +126,24 @@
             </iframe>
         </div>
     </section>
-    <section id="contacto"> <!--SECTION form-->
+    <!--SECTION form contacto--------------------------------------------------------------------------------->
+    <section id="contacto"> 
         <div class="container">
             <h2>Contacto</h2>
-            <form id="contacto-formulario">
+            <form id="contacto-formulario" onsubmit= "return validarDatosContacto()">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
                 <label for="email">Correo Electrónico:</label>
                 <input type="email" id="email" name="email" required>    
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" required></textarea>    
-                <button type="submit">Enviar</button>
+                <button type="submit" value="Enviar">Enviar</button>
+                <div id=“campos”> </div>
             </form>
         </div>
     </section>
-    <footer>    <!--FOOTER  -->
+    <!--FOOTER  ---------------------------------------------------------------------------------------------->
+    <footer>    
         <div class="footer-content">
             <div class="footer-section about">
                 <a href="../templates/nosotros.html">
@@ -162,6 +170,8 @@
             <p>&copy; 2024 Grupo 7. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <!--SCRIPT links---------------------------------------------------------------------->
     <script src="../static/js/modal.js"></script>
+    <script src="../static/js/validacioncontacto.js"></script>
 </body>
 </html>

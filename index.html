@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanatorio Grupo 7</title>
+    <link rel="stylesheet" href="static/css/global.css">
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header> <!--HEADER nav  -->
+    <!--HEADER------------------------------------------------------------------------------------------->
+    <header>
+        <!--NAV------------------------------------------------------------------->
         <nav>
             <ul>
                 <li id="image">
@@ -36,37 +39,37 @@
                 <li class="dropdown">
                     <a href="templates/formulario.html" >Turnos</a>
                 </li>
+                <!--Li vacio para poder jugar con el espacio en distintas medidas con display:none-->
                 <li class="dropdown"> 
                     <a href=""></a>
                 </li>
-                <li class="dropdown">                
-                    <!-- El modal -->
+                <!--MODAL link a js--->
+                <li class="dropdown">
                     <a href="javascript:void(0)" class="emergencias-link" id="emergenciasLink">Emergencias</a>
                </li>
             </ul>
         </nav>
-        <!-- El modal -->
+        <!-- MODAL ---------------------------------------------------------->
         <div id="myModal" class="modal">
-        
-            <!-- Contenido del modal -->
             <div class="modal-content">
-              <span class="close">&times;</span>
-              <p>Sanatorio Grupo 7</p>
-              <p>Dirección: Rivadavia 1000000</p>
-              <p>Teléfono: 1111111111111</p>
-              <p>Horario: 24 horas</p>
+                <span class="close">&times;</span>
+                <p>Sanatorio Grupo 7</p>
+                <p>Dirección: Rivadavia 1000000</p>
+                <p>Teléfono: 1111111111111</p>
+                <p>Horario: 24 horas</p>
             </div>
-          
-          </div>
-    </header>  
-    <main>  <!--MAIN section  -->
+        </div>
+    </header>
+    <!--MAIN section banner index ------------------------------------------------------------->
+    <main>  
         <section id="seccion-con-foto"  aria-label="Sanatorio Grupo 7">
             <div class="container">
                 <img src="static/img/logomain.png" alt="" class="logo">
             </div>
         </section>
     </main>
-    <footer>    <!--FOOTER  -->
+    <!--FOOTER  ---------------------------------------------------------------------------------------------->
+    <footer>
         <div class="footer-content">
             <div class="footer-section about">
                 <a href="templates/nosotros.html">
@@ -93,6 +96,7 @@
             <p>&copy; 2024 Grupo 7. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <!--SCRIPT links---------------------------------------------------------------------->
     <script src="static/js/modal.js"></script>
 </body>
 </html>
